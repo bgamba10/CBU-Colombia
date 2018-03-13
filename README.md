@@ -13,4 +13,5 @@ meteor
 
 # Video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CtbjJdSGKrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+[![Streaming video explaining the concept](https://img.youtube.com/vi/CtbjJdSGKrA/0.jpg)](https://www.youtube.com/watch?v=CtbjJdSGKrA)
