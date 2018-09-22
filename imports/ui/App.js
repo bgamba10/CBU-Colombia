@@ -6,6 +6,7 @@ import { withTracker } from "meteor/react-meteor-data";
 import PostList from "./PostList";
 import PostAdd from "./PostAdd";
 import { Posts } from "../api/posts";
+import Post from "./Post";
 
 
 export class App extends Component {
@@ -52,17 +53,9 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>EmojiVoter</h1>
-
-        <PostList
-          posts={this.props.posts}
-          onVote={this.onVote.bind(this)}
-          >
-        </PostList>
-        <PostAdd
-          onAdd={this.onAdd.bind(this)}
-          >
-        </PostAdd>
+        <h1>Proyecto CBU</h1>
+        <Post/>
+        
       </div>
     );
   }
