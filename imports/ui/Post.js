@@ -87,7 +87,7 @@ export default class Post extends Component {
       Es una crónica perteneciente a las obras de las letras coloniales neogranadinas, (siglo XVII). Se enfoca principalmente en el control de la mujer y los territorios, y esto lo muestran mediante el ejemplo de Adán y Eva.
     </p>
 
-    <button onClick = {this.toggleHidden.bind(this)} >ver maaaassss</button>
+    <button className="btn-sexualidad" onClick = {this.toggleHidden.bind(this)} >Ver más</button>
     {!this.state.isHidden && <div >
         <p><b>Estereotipo:</b> Muestra como la mujer por su belleza es una mala influencia para el hombre.</p>
 <p><b>Relación con la tesis:  </b>

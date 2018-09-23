@@ -35,6 +35,29 @@ content .vertical-timeline-element-date, .vertical-timeline-element:nth-child(ev
     font-size: 1.2em;
 }
 
+.btn-sexualidad{
+	background-color: rgb(255, 161, 77);
+	border-radius: 5px;
+	border: none;
+	margin-top: 10px;
+	padding: 5px 15px;
+}
+
+.btn-educacion{
+	background-color: rgb(116, 55, 188) ;
+	border-radius: 5px;
+	border: none;
+	margin-top: 10px;
+	padding: 5px 15px;
+}
+
+.btn-voto{
+	background-color: rgb(15, 181, 196) ;
+	border-radius: 5px;
+	border: none;
+	margin-top: 10px;
+	padding: 5px 15px;
+}
 
 content .vertical-timeline-element-date, .vertical-timeline-element:nth-child(odd):not(.vertical-timeline-element--right) .vertical-timeline-element-content .vertical-timeline-element-date {
     right: auto;
