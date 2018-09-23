@@ -35,28 +35,39 @@ export default class Post extends Component {
         
         <h2>Filtra la información por el derecho que más te interese</h2>
 
-        <div>
-
+        <div className="row">
+        <div className="col-sm-4">
           <div className="checkbox">
             <label><input type="checkbox" value="Educación"/>Educación</label>
           </div>
+          </div>
+          <div className="col-sm-4">
           <div className="checkbox">
             <label><input type="checkbox" value="Voto"/>Voto</label>
           </div>
-          <div className="checkbox disabled">
+          </div>
+          <div className="col-sm-4">
+          <div className="checkbox">
             <label><input type="checkbox" value="Sexualidad"/>Sexualidad</label>
           </div>
+          </div>
+        
 
 
         </div>
 
-        <img src = "https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg"/>
+        <hr/>
+
+    
         <VerticalTimeline>
+
+
+
   <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="2011 - present"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<img src = "https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" size = "10px"/>}
+    className="vertical-timeline-element--left"
+    date={"2011"}
+    iconStyle={{ background: 'rgb(116, 55, 188)', color: '#fff', padding: "20px"}}
+    icon={<i className="fa fa-check" aria-hidden="true" ></i>}
   >
     <h3 className="vertical-timeline-element-title">Creative Director</h3>
     <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
@@ -67,7 +78,7 @@ export default class Post extends Component {
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="2010 - 2011"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(116, 55, 188)', color: '#fff' }}
     
   >
     <h3 className="vertical-timeline-element-title">Art Director</h3>
@@ -79,7 +90,7 @@ export default class Post extends Component {
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="2008 - 2010"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(116, 55, 188)', color: '#fff' }}
     
   >
     <h3 className="vertical-timeline-element-title">Web Designer</h3>
@@ -91,7 +102,7 @@ export default class Post extends Component {
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="2006 - 2008"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(116, 55, 188)', color: '#fff' }}
    
   >
     <h3 className="vertical-timeline-element-title">Web Designer</h3>
@@ -103,7 +114,7 @@ export default class Post extends Component {
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="April 2013"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(255, 161, 77)', color: '#fff' }}
     
   >
     <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
@@ -115,7 +126,7 @@ export default class Post extends Component {
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="November 2012"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(255, 161, 77)', color: '#fff' }}
     
   >
     <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
@@ -127,7 +138,7 @@ export default class Post extends Component {
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="2002 - 2006"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(255, 161, 77)', color: '#fff' }}
     
   >
     <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
@@ -137,7 +148,8 @@ export default class Post extends Component {
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
-    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(15, 181, 196)', color: '#fff' }}
+    date="1996"
     
   />
 </VerticalTimeline>

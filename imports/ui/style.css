@@ -1,0 +1,62 @@
+/* Basic styling for the web site */
+body {
+	background: linear-gradient(to top right, rgba(1,15,58,1), rgba(1,15,58,1), rgba(1,15,58,1));
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+#render-target {
+	font-size: 16px;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+
+.vertical-timeline-element-title {
+    margin: 0;
+    color: #000;
+}
+
+.vertical-timeline-element-subtitle {
+    margin: 0;
+    color: #000;
+}
+
+content .vertical-timeline-element-date, .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
+    left: auto;
+    right: 140%;
+    text-align: right;
+    color: #E0D5CD;
+    font-size: 1.2em;
+}
+
+
+content .vertical-timeline-element-date, .vertical-timeline-element:nth-child(odd):not(.vertical-timeline-element--right) .vertical-timeline-element-content .vertical-timeline-element-date {
+    right: auto;
+    left: 140%;
+    text-align: left;
+    color: #E0D5CD;
+    font-size: 1.2em;
+}
+
+#render-target h1{
+	text-align: center;
+	color: #E0D5CD;
+	font-family: 'Bitter', serif;
+	font-size: 4em;
+	padding-bottom: 0.5em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+}
+
+#render-target hr {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 50%;
+}
+
+#render-target h2{
+	font-weight: bold;
+	padding: 10px;
+}
