@@ -20,7 +20,8 @@ export default class Post extends Component {
       isHidden8: true,
       checkEducacion: false,
       checkVoto: false, 
-      checkSexual: false
+      checkSexual: false, 
+      inicial: true
     };
   }
 
@@ -96,19 +97,22 @@ export default class Post extends Component {
 
   onClickEducacion() {
     this.setState({
-      checkEducacion: !this.state.checkEducacion
+      checkEducacion: !this.state.checkEducacion,
+      inicial: false
     })
   }
 
   onClickVoto() {
     this.setState({
-      checkVoto: !this.state.checkVoto
+      checkVoto: !this.state.checkVoto,
+      inicial: false
     })
   }
 
   onClickSexual() {
     this.setState({
-      checkSexual: !this.state.checkSexual
+      checkSexual: !this.state.checkSexual,
+      inicial: false
     })
   }
 
@@ -150,7 +154,7 @@ export default class Post extends Component {
 
 
 
-  {this.state.checkSexual && <VerticalTimelineElement
+  {(this.state.checkSexual || this.state.inicial) && <VerticalTimelineElement
     className="vertical-timeline-element--left"
     date="1638"
     iconStyle={{ background: 'rgb(255, 161, 77) ', color: '#fff', padding: "20px"}}
@@ -178,7 +182,7 @@ export default class Post extends Component {
 
   </VerticalTimelineElement> }
 
-  {this.state.checkEducacion && <VerticalTimelineElement
+  {(this.state.checkEducacion  || this.state.inicial) && <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="1858 "
     iconStyle={{ background: 'rgb(116, 55, 188)', color: '#fff' }}
@@ -205,7 +209,7 @@ export default class Post extends Component {
 
   </VerticalTimelineElement> }
   
-  {this.state.checkEducacion &&  <VerticalTimelineElement
+  {(this.state.checkEducacion  || this.state.inicial) &&  <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="1867 "
     iconStyle={{ background: 'rgb(116, 55, 188)', color: '#fff' }}
@@ -234,7 +238,7 @@ export default class Post extends Component {
 
   </VerticalTimelineElement> }
 
-  {this.state.checkEducacion && <VerticalTimelineElement
+  {(this.state.checkEducacion || this.state.inicial) &&  <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="1876 "
     iconStyle={{ background: 'rgb(116, 55, 188)', color: '#fff' }}
@@ -263,7 +267,7 @@ export default class Post extends Component {
 
   </VerticalTimelineElement>}
 
-  {this.state.checkVoto && <VerticalTimelineElement
+  {(this.state.checkVoto  || this.state.inicial) && <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="1944 "
     iconStyle={{ background: 'rgb(15, 181, 196) ', color: '#fff' }}
@@ -291,7 +295,7 @@ export default class Post extends Component {
 
   </VerticalTimelineElement>}
   
-  {this.state.checkSexual && <VerticalTimelineElement
+  {(this.state.checkSexual || this.state.inicial) && <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="1969 "
     iconStyle={{ background: 'rgb(255, 161, 77) ', color: '#fff' }}
@@ -319,7 +323,7 @@ export default class Post extends Component {
 
   </VerticalTimelineElement>}
   
-  {this.state.checkSexual && <VerticalTimelineElement
+  {(this.state.checkSexual || this.state.inicial) && <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="1995 "
     iconStyle={{ background: 'rgb(255, 161, 77)', color: '#fff' }}
@@ -332,7 +336,7 @@ export default class Post extends Component {
     </p>
   </VerticalTimelineElement>}
  
- {this.state.checkSexual && <VerticalTimelineElement
+ {(this.state.checkSexual || this.state.inicial) && <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="1969 "
     iconStyle={{ background: 'rgb(255, 161, 77) ', color: '#fff' }}
@@ -360,7 +364,7 @@ export default class Post extends Component {
   </VerticalTimelineElement>}
 
 
-  {this.state.checkVoto && <VerticalTimelineElement
+  {(this.state.checkVoto || this.state.inicial) && <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="1944 "
     iconStyle={{ background: 'rgb(15, 181, 196) ', color: '#fff' }}
