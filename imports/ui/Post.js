@@ -32,7 +32,24 @@ export default class Post extends Component {
   render() {
     return (
       <div className="Post">
-        <h2>Buenas</h2> 
+        
+        <h2>Filtra la información por el derecho que más te interese</h2>
+
+        <div>
+
+          <div className="checkbox">
+            <label><input type="checkbox" value="Educación"/>Educación</label>
+          </div>
+          <div className="checkbox">
+            <label><input type="checkbox" value="Voto"/>Voto</label>
+          </div>
+          <div className="checkbox disabled">
+            <label><input type="checkbox" value="Sexualidad"/>Sexualidad</label>
+          </div>
+
+
+        </div>
+
         <img src = "https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg"/>
         <VerticalTimeline>
   <VerticalTimelineElement
