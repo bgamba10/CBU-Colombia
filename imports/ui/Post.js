@@ -169,7 +169,7 @@ export default class Post extends Component {
       Esta novela relata una historia entre una campesina (Manuela) y un joven letrado de Bogotá que acaba de llegar de los Estados Unidos. La relación que se muestra entre estos dos personajes es una amistad basada en la superación de la ignorancia y la búsqueda de conocimiento académico.  
     </p>
 
-    <button onClick = {this.toggleHidden1.bind(this)} >ver maaaassss</button>
+    <button className="btn-educacion" onClick = {this.toggleHidden1.bind(this)} >Ver más</button>
 
     {!this.state.isHidden1 && <div >
         <p><b>Estereotipo: </b> En esta novela se muestra como las mujeres de los pueblos generalmente son iletradas y son oprimidas por el género masculino, además refleja como los hombres si tienen acceso a la educación.</p>
@@ -195,7 +195,7 @@ export default class Post extends Component {
       Esta historia relata la vida de María una joven educada pero idealista, de naturaleza domestica que no tiene voz ni voto en la sociedad. Ella representa el ideal de mujer frágil, débil, inocente y pura, que al final sufre una enfermedad y depende de su amado para salvarse. 
     </p>
 
-    <button onClick = {this.toggleHidden2.bind(this)} >ver maaaassss</button>
+    <button className="btn-educacion" onClick = {this.toggleHidden2.bind(this)} >Ver más</button>
 
     {!this.state.isHidden2 && <div >
     <p><b>Estereotipo: </b> 
@@ -224,7 +224,7 @@ export default class Post extends Component {
     </p>
 
 
-    <button onClick = {this.toggleHidden3.bind(this)}> ver maaaassss</button>
+    <button className="btn-educacion" onClick = {this.toggleHidden3.bind(this)}> Ver más</button>
     {!this.state.isHidden3 && <div >
     <p><b>Estereotipo: </b> 
     Las mujeres románticas e idealistas que están sumisas ante los hombres y cuando este amor se daña o se pierde ellas mueren gracias a la pena amorosa que esto les produce. Como la mama de Lucia que fue engañada por su esposo y luego murió por amor.
@@ -251,7 +251,7 @@ export default class Post extends Component {
       Esta fuente hace un recorrido sobre los derechos de las mujeres en Colombia y como estos han evolucionado a través de los años desde la época de la independencia de la corona española. Además, pretende informar a mujeres sobre el tema de sus derechos que estaba siendo discutido por el gobierno de esa época.
     </p>
 
-    <button onClick = {this.toggleHidden4.bind(this)}> ver maaaassss</button>
+    <button className="btn-voto" onClick = {this.toggleHidden4.bind(this)}> Ver más</button>
     {!this.state.isHidden4 && <div >
     <p><b>Estereotipo: </b> 
     Las mujeres tienen derecho más como las creen seres débiles e inferiores no deberían poder ejercerlos por ejemplo el votar.
@@ -278,7 +278,7 @@ export default class Post extends Component {
       La escritora de esta fuente periodística es una mujer que no está de acuerdo con algunas de las afirmaciones que hace la iglesia sobre el comportamiento que deberían tener las mujeres en la sociedad. Es colombiana e intenta dirigirse a otras mujeres para que se den cuenta de las limitaciones impuestas por la sociedad para ser felices.
     </p>
 
-    <button onClick = {this.toggleHidden5.bind(this)}> ver maaaassss</button>
+    <button className="btn-sexualidad" onClick = {this.toggleHidden5.bind(this)}> Ver más</button>
     {!this.state.isHidden5 && <div >
     <p><b>Estereotipo: </b> 
     La ideología que implanta la iglesia sobre la mujer, como esta debe ser casta pura y perfecta y por esto no apoya los anticonceptivos. 
@@ -317,7 +317,7 @@ export default class Post extends Component {
       La escritora de esta fuente periodística es una mujer que no está de acuerdo con algunas de las afirmaciones que hace la iglesia sobre el comportamiento que deberían tener las mujeres en la sociedad. Es colombiana e intenta dirigirse a otras mujeres para que se den cuenta de las limitaciones impuestas por la sociedad para ser felices.
     </p>
 
-    <button onClick = {this.toggleHidden6.bind(this)}> ver maaaassss</button>
+    <button className="btn-sexualidad" onClick = {this.toggleHidden6.bind(this)}>Ver más</button>
     {!this.state.isHidden6 && <div >
     <p><b>Estereotipo: </b> 
     La ideología que implanta la iglesia sobre la mujer, como esta debe ser casta pura y perfecta y por esto no apoya los anticonceptivos. 
@@ -345,7 +345,7 @@ export default class Post extends Component {
       Esta fuente hace un recorrido sobre los derechos de las mujeres en Colombia y como estos han evolucionado a través de los años desde la época de la independencia de la corona española. Además, pretende informar a mujeres sobre el tema de sus derechos que estaba siendo discutido por el gobierno de esa época.
     </p>
 
-    <button onClick = {this.toggleHidden7.bind(this)}> ver maaaassss</button>
+    <button className="btn-voto" onClick = {this.toggleHidden7.bind(this)}> Ver más</button>
     {!this.state.isHidden7 && <div >
     <p><b>Estereotipo: </b> 
     Las mujeres tienen derecho más como las creen seres débiles e inferiores no deberían poder ejercerlos por ejemplo el votar.
