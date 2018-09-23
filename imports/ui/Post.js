@@ -18,9 +18,9 @@ export default class Post extends Component {
       isHidden6: true,
       isHidden7: true,
       isHidden8: true,
-      checkEducacion: true,
-      checkVoto: true, 
-      checkSexual: true
+      checkEducacion: false,
+      checkVoto: false, 
+      checkSexual: false
     };
   }
 
@@ -150,7 +150,7 @@ export default class Post extends Component {
 
 
 
-  <VerticalTimelineElement
+  {this.state.checkSexual && <VerticalTimelineElement
     className="vertical-timeline-element--left"
     date="1638"
     iconStyle={{ background: 'rgb(255, 161, 77) ', color: '#fff', padding: "20px"}}
@@ -176,8 +176,9 @@ export default class Post extends Component {
     
       
 
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
+  </VerticalTimelineElement> }
+
+  {this.state.checkEducacion && <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="1858 "
     iconStyle={{ background: 'rgb(116, 55, 188)', color: '#fff' }}
@@ -202,8 +203,9 @@ export default class Post extends Component {
     </div> }
 
 
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
+  </VerticalTimelineElement> }
+  
+  {this.state.checkEducacion &&  <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="1867 "
     iconStyle={{ background: 'rgb(116, 55, 188)', color: '#fff' }}
@@ -230,8 +232,9 @@ export default class Post extends Component {
     </p> 
     </div> }
 
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
+  </VerticalTimelineElement> }
+
+  {this.state.checkEducacion && <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="1876 "
     iconStyle={{ background: 'rgb(116, 55, 188)', color: '#fff' }}
@@ -258,8 +261,9 @@ export default class Post extends Component {
     </p>
     </div> }
 
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
+  </VerticalTimelineElement>}
+
+  {this.state.checkVoto && <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="1944 "
     iconStyle={{ background: 'rgb(15, 181, 196) ', color: '#fff' }}
@@ -285,8 +289,9 @@ export default class Post extends Component {
     </p>
     </div> }
 
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
+  </VerticalTimelineElement>}
+  
+  {this.state.checkSexual && <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="1969 "
     iconStyle={{ background: 'rgb(255, 161, 77) ', color: '#fff' }}
@@ -312,8 +317,9 @@ export default class Post extends Component {
     </p>
     </div>}
 
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
+  </VerticalTimelineElement>}
+  
+  {this.state.checkSexual && <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="1995 "
     iconStyle={{ background: 'rgb(255, 161, 77)', color: '#fff' }}
@@ -324,8 +330,9 @@ export default class Post extends Component {
     <p>
       Creative Direction, Visual Design
     </p>
-  </VerticalTimelineElement>
- <VerticalTimelineElement
+  </VerticalTimelineElement>}
+ 
+ {this.state.checkSexual && <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="1969 "
     iconStyle={{ background: 'rgb(255, 161, 77) ', color: '#fff' }}
@@ -350,10 +357,10 @@ export default class Post extends Component {
     Artículo de la revista “Mujer de América”
     </p>
     </div>}
-  </VerticalTimelineElement>
+  </VerticalTimelineElement>}
 
 
-  <VerticalTimelineElement
+  {this.state.checkVoto && <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="1944 "
     iconStyle={{ background: 'rgb(15, 181, 196) ', color: '#fff' }}
@@ -379,7 +386,7 @@ export default class Post extends Component {
     </p>
     </div> }
 
-  </VerticalTimelineElement>
+  </VerticalTimelineElement> }
   
 </VerticalTimeline>
       </div>
