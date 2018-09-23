@@ -35,6 +35,7 @@ export default class Post extends Component {
         
         <h2>Filtra la información por el derecho que más te interese</h2>
 
+    <div className="i-am-centered">
         <div className="row">
         <div className="col-sm-4">
           <div className="checkbox">
@@ -55,7 +56,7 @@ export default class Post extends Component {
 
 
         </div>
-
+        </div>
         <hr/>
 
     
@@ -65,15 +66,25 @@ export default class Post extends Component {
 
   <VerticalTimelineElement
     className="vertical-timeline-element--left"
-    date={"2011"}
-    iconStyle={{ background: 'rgb(116, 55, 188)', color: '#fff', padding: "20px"}}
-    icon={<i className="fa fa-check" aria-hidden="true" ></i>}
+    date="1638"
+    iconStyle={{ background: 'rgb(255, 161, 77) ', color: '#fff', padding: "20px"}}
+    
   >
-    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+    <h3 className="vertical-timeline-element-title">El carnero</h3>
+    <h4 className="vertical-timeline-element-subtitle">Sexualidad</h4>
     <p>
-      Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+      Es una crónica perteneciente a las obras de las letras coloniales neogranadinas, (siglo XVII). Se enfoca principalmente en el control de la mujer y los territorios, y esto lo muestran mediante el ejemplo de Adán y Eva.
     </p>
+    <p>ver maaaassss</p>
+    <p>Estereotipo: Muestra como la mujer por su belleza es una mala influencia para el hombre.</p>
+<p>Relación con la tesis:  
+En esta se ve de donde vienen los estereotipos de control sobre la mujer y como esta es degradada a simplemente un objeto de belleza que corrompe a los hombres. En especial porque esta crónica fue escrita en el siglo XVII y en esta época aún no se contemplaban los derechos de la mujer.
+</p>
+<p>
+Tipo de fuente:
+Crónica  escrita
+</p>
+
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
