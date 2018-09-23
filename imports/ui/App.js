@@ -72,7 +72,7 @@ export class App extends Component {
           <div className="carousel-inner">
 
             <div className="item active">
-              <img src="https://kids.nationalgeographic.com/content/dam/kids/photos/Countries/A-G/colombia-coffee.ngsversion.1396531583459.jpg" alt="Los Angeles" />
+              <img src="https://raw.githubusercontent.com/bgamba10/CBU-Colombia/master/imports/ui/col.jpg" alt="Colombia" />
               <div className="carousel-caption">
                 <h3>¿Cómo nació el proyecto?</h3>
 
@@ -82,7 +82,7 @@ export class App extends Component {
             </div>
 
             <div className="item">
-              <img src="https://kids.nationalgeographic.com/content/dam/kids/photos/Countries/A-G/colombia-coffee.ngsversion.1396531583459.jpg" alt="Chicago" />
+              <img src="https://raw.githubusercontent.com/bgamba10/CBU-Colombia/master/imports/ui/col.jpg" alt="Colombia" />
               <div className="carousel-caption">
                  <h3>¿A quién va dirigido?</h3>
 
@@ -92,7 +92,7 @@ export class App extends Component {
             </div>
           
             <div className="item">
-              <img src="https://kids.nationalgeographic.com/content/dam/kids/photos/Countries/A-G/colombia-coffee.ngsversion.1396531583459.jpg" alt="New York" />
+              <img src="https://raw.githubusercontent.com/bgamba10/CBU-Colombia/master/imports/ui/col.jpg" alt="Colombia" />
               <div className="carousel-caption">
                 <h3>Tesis</h3>
 
@@ -102,7 +102,7 @@ export class App extends Component {
             </div>
 
             <div className="item">
-              <img src="https://kids.nationalgeographic.com/content/dam/kids/photos/Countries/A-G/colombia-coffee.ngsversion.1396531583459.jpg" alt="New York" />
+              <img src="https://raw.githubusercontent.com/bgamba10/CBU-Colombia/master/imports/ui/col.jpg" alt="Colombia" />
               <div className="carousel-caption">
                 <h3>¿Cuál es la importancia de este proyecto?</h3>
 
@@ -112,7 +112,7 @@ export class App extends Component {
             </div>
 
             <div className="item">
-              <img src="https://kids.nationalgeographic.com/content/dam/kids/photos/Countries/A-G/colombia-coffee.ngsversion.1396531583459.jpg" alt="New York" />
+              <img src="https://raw.githubusercontent.com/bgamba10/CBU-Colombia/master/imports/ui/col.jpg" alt="Colombia" />
               <div className="carousel-caption">
                 <h3>Nuestro equipo</h3>
 
