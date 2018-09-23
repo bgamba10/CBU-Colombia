@@ -2,14 +2,22 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import Modal from 'react-modal';
 
 export default class Post extends Component {
   constructor(props) {
     super(props);
 
     this.state={
+      isHidden: true
 
     };
+  }
+
+ toggleHidden () {
+    this.setState({
+      isHidden: !this.state.isHidden
+    })
   }
 
   renderVotes() {
@@ -29,11 +37,14 @@ export default class Post extends Component {
   }
 
 
+
+
   render() {
     return (
       <div className="Post">
         
         <h2>Filtra la información por el derecho que más te interese</h2>
+
 
     <div className="i-am-centered">
         <div className="row">
@@ -75,15 +86,20 @@ export default class Post extends Component {
     <p>
       Es una crónica perteneciente a las obras de las letras coloniales neogranadinas, (siglo XVII). Se enfoca principalmente en el control de la mujer y los territorios, y esto lo muestran mediante el ejemplo de Adán y Eva.
     </p>
-    <p>ver maaaassss</p>
-    <p>Estereotipo: Muestra como la mujer por su belleza es una mala influencia para el hombre.</p>
-<p>Relación con la tesis:  
-En esta se ve de donde vienen los estereotipos de control sobre la mujer y como esta es degradada a simplemente un objeto de belleza que corrompe a los hombres. En especial porque esta crónica fue escrita en el siglo XVII y en esta época aún no se contemplaban los derechos de la mujer.
-</p>
-<p>
-Tipo de fuente:
-Crónica  escrita
-</p>
+    <button onClick = {this.toggleHidden.bind(this)} >ver maaaassss</button>
+    {!this.state.isHidden && <div >
+        <p>Estereotipo: Muestra como la mujer por su belleza es una mala influencia para el hombre.</p>
+          <p>Relación con la tesis:  
+          En esta se ve de donde vienen los estereotipos de control sobre la mujer y como esta es degradada a simplemente un objeto de belleza que corrompe a los hombres. En especial porque esta crónica fue escrita en el siglo XVII y en esta época aún no se contemplaban los derechos de la mujer.
+          </p>
+          <p>
+          Tipo de fuente:
+          Crónica  escrita
+          </p>
+     </div>}
+    
+      
+    
 
   </VerticalTimelineElement>
   <VerticalTimelineElement
