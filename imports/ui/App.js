@@ -8,6 +8,8 @@ import PostAdd from "./PostAdd";
 import { Posts } from "../api/posts";
 import Post from "./Post";
 
+import "./style.css";
+
 
 export class App extends Component {
   constructor(props) {
@@ -53,9 +55,13 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Proyecto CBU</h1>
+        <h1>Evolución de los Derechos de la Mujer en Colombia</h1>
         <Post/>
         
+
+        <div id = "footer">
+        <p>Icons made by <a href="https://www.flaticon.com/authors/popcorns-arts" title="Icon Pond">Icon Pond</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+        </div>
       </div>
     );
   }
