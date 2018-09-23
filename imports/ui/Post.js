@@ -9,14 +9,69 @@ export default class Post extends Component {
     super(props);
 
     this.state={
-      isHidden: true
-
+      isHidden: true,
+      isHidden1: true,
+      isHidden2: true,
+      isHidden3: true,
+      isHidden4: true,
+      isHidden5: true,
+      isHidden6: true,
+      isHidden7: true,
+      isHidden8: true
     };
   }
 
  toggleHidden () {
     this.setState({
       isHidden: !this.state.isHidden
+    })
+  }
+
+  toggleHidden1 () {
+    this.setState({
+      isHidden1: !this.state.isHidden1
+    })
+  }
+
+  toggleHidden2 () {
+    this.setState({
+      isHidden2: !this.state.isHidden2
+    })
+  }
+
+  toggleHidden3 () {
+    this.setState({
+      isHidden3: !this.state.isHidden3
+    })
+  }
+
+  toggleHidden4 () {
+    this.setState({
+      isHidden4: !this.state.isHidden4
+    })
+  }
+
+  toggleHidden5 () {
+    this.setState({
+      isHidden5: !this.state.isHidden5
+    })
+  }
+
+  toggleHidden6 () {
+    this.setState({
+      isHidden6: !this.state.isHidden6
+    })
+  }
+
+  toggleHidden7 () {
+    this.setState({
+      isHidden7: !this.state.isHidden7
+    })
+  }
+
+  toggleHidden8 () {
+    this.setState({
+      isHidden8: !this.state.isHidden8
     })
   }
 
@@ -90,13 +145,13 @@ export default class Post extends Component {
     <button onClick = {this.toggleHidden.bind(this)} >ver maaaassss</button>
     {!this.state.isHidden && <div >
         <p><b>Estereotipo:</b> Muestra como la mujer por su belleza es una mala influencia para el hombre.</p>
-<p><b>Relación con la tesis:  </b>
-En esta se ve de donde vienen los estereotipos de control sobre la mujer y como esta es degradada a simplemente un objeto de belleza que corrompe a los hombres. En especial porque esta crónica fue escrita en el siglo XVII y en esta época aún no se contemplaban los derechos de la mujer.
-</p>
-<p>
-<b>Tipo de fuente:</b>
-Crónica  escrita
-</p>
+        <p><b>Relación con la tesis:  </b>
+        En esta se ve de donde vienen los estereotipos de control sobre la mujer y como esta es degradada a simplemente un objeto de belleza que corrompe a los hombres. En especial porque esta crónica fue escrita en el siglo XVII y en esta época aún no se contemplaban los derechos de la mujer.
+        </p>
+        <p>
+        <b>Tipo de fuente:</b>
+        Crónica  escrita
+        </p>
      </div>}
     
       
@@ -114,14 +169,17 @@ Crónica  escrita
       Esta novela relata una historia entre una campesina (Manuela) y un joven letrado de Bogotá que acaba de llegar de los Estados Unidos. La relación que se muestra entre estos dos personajes es una amistad basada en la superación de la ignorancia y la búsqueda de conocimiento académico.  
     </p>
 
-    <p>ver maaaassss</p>
-    <p><b>Estereotipo: </b> En esta novela se muestra como las mujeres de los pueblos generalmente son iletradas y son oprimidas por el género masculino, además refleja como los hombres si tienen acceso a la educación.</p>
-<p><b>Relación con la tesis:</b>  Esta novela muestra como las mujeres tenían restricción en el área de la educación y la sumisión ante el género masculino, pero plantea un personaje principal que rompe con todos estos estereotipos pues Manuela es una mujer independiente, que no esta de acuerdo con las duras reglas que impone la sociedad pues las cuestiona y en algunos casos contradice y no tiene miedo de decir lo que piensa y hacerse escuchar. Además, ella no cae enamorada y sumisa ante los pies del joven letrado como generalmente pasaba en esa época.  </p>
-<p>
-<b>Tipo de fuente:</b>
-Novela colombiana 
+    <button onClick = {this.toggleHidden1.bind(this)} >ver maaaassss</button>
 
-</p>
+    {!this.state.isHidden1 && <div >
+        <p><b>Estereotipo: </b> En esta novela se muestra como las mujeres de los pueblos generalmente son iletradas y son oprimidas por el género masculino, además refleja como los hombres si tienen acceso a la educación.</p>
+    <p><b>Relación con la tesis:</b>  Esta novela muestra como las mujeres tenían restricción en el área de la educación y la sumisión ante el género masculino, pero plantea un personaje principal que rompe con todos estos estereotipos pues Manuela es una mujer independiente, que no esta de acuerdo con las duras reglas que impone la sociedad pues las cuestiona y en algunos casos contradice y no tiene miedo de decir lo que piensa y hacerse escuchar. Además, ella no cae enamorada y sumisa ante los pies del joven letrado como generalmente pasaba en esa época.  </p>
+    <p>
+    <b>Tipo de fuente:</b>
+    Novela colombiana 
+
+    </p>
+    </div> }
 
 
   </VerticalTimelineElement>
@@ -137,7 +195,9 @@ Novela colombiana
       Esta historia relata la vida de María una joven educada pero idealista, de naturaleza domestica que no tiene voz ni voto en la sociedad. Ella representa el ideal de mujer frágil, débil, inocente y pura, que al final sufre una enfermedad y depende de su amado para salvarse. 
     </p>
 
-    <p>ver maaaassss</p>
+    <button onClick = {this.toggleHidden2.bind(this)} >ver maaaassss</button>
+
+    {!this.state.isHidden2 && <div >
     <p><b>Estereotipo: </b> 
     Muestra como la mujer debe tener una personalidad frágil y débil para que el hombre la cuide en el matrimonio.
     </p>
@@ -147,7 +207,8 @@ Novela colombiana
     <p>
     <b>Tipo de fuente: </b>
     Novela romántica colombiana 
-    </p>
+    </p> 
+    </div> }
 
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -163,7 +224,8 @@ Novela colombiana
     </p>
 
 
-    <p>ver maaaassss</p>
+    <button onClick = {this.toggleHidden3.bind(this)}> ver maaaassss</button>
+    {!this.state.isHidden3 && <div >
     <p><b>Estereotipo: </b> 
     Las mujeres románticas e idealistas que están sumisas ante los hombres y cuando este amor se daña o se pierde ellas mueren gracias a la pena amorosa que esto les produce. Como la mama de Lucia que fue engañada por su esposo y luego murió por amor.
     </p>
@@ -174,6 +236,7 @@ Novela colombiana
     <b>Tipo de fuente: </b>
     Novela colombiana 
     </p>
+    </div> }
 
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -188,7 +251,8 @@ Novela colombiana
       Esta fuente hace un recorrido sobre los derechos de las mujeres en Colombia y como estos han evolucionado a través de los años desde la época de la independencia de la corona española. Además, pretende informar a mujeres sobre el tema de sus derechos que estaba siendo discutido por el gobierno de esa época.
     </p>
 
-    <p>ver maaaassss</p>
+    <button onClick = {this.toggleHidden4.bind(this)}> ver maaaassss</button>
+    {!this.state.isHidden4 && <div >
     <p><b>Estereotipo: </b> 
     Las mujeres tienen derecho más como las creen seres débiles e inferiores no deberían poder ejercerlos por ejemplo el votar.
     </p>
@@ -199,6 +263,7 @@ Novela colombiana
     <b>Tipo de fuente: </b>
     Columna editorial de la revista femenina Mireya
     </p>
+    </div> }
 
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -213,7 +278,8 @@ Novela colombiana
       La escritora de esta fuente periodística es una mujer que no está de acuerdo con algunas de las afirmaciones que hace la iglesia sobre el comportamiento que deberían tener las mujeres en la sociedad. Es colombiana e intenta dirigirse a otras mujeres para que se den cuenta de las limitaciones impuestas por la sociedad para ser felices.
     </p>
 
-    <p>ver maaaassss</p>
+    <button onClick = {this.toggleHidden5.bind(this)}> ver maaaassss</button>
+    {!this.state.isHidden5 && <div >
     <p><b>Estereotipo: </b> 
     La ideología que implanta la iglesia sobre la mujer, como esta debe ser casta pura y perfecta y por esto no apoya los anticonceptivos. 
     </p>
@@ -224,6 +290,8 @@ Novela colombiana
     <b>Tipo de fuente: </b>
     Artículo de la revista “Mujer de América”
     </p>
+    </div>}
+
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
@@ -249,7 +317,8 @@ Novela colombiana
       La escritora de esta fuente periodística es una mujer que no está de acuerdo con algunas de las afirmaciones que hace la iglesia sobre el comportamiento que deberían tener las mujeres en la sociedad. Es colombiana e intenta dirigirse a otras mujeres para que se den cuenta de las limitaciones impuestas por la sociedad para ser felices.
     </p>
 
-    <p>ver maaaassss</p>
+    <button onClick = {this.toggleHidden6.bind(this)}> ver maaaassss</button>
+    {!this.state.isHidden6 && <div >
     <p><b>Estereotipo: </b> 
     La ideología que implanta la iglesia sobre la mujer, como esta debe ser casta pura y perfecta y por esto no apoya los anticonceptivos. 
     </p>
@@ -260,6 +329,7 @@ Novela colombiana
     <b>Tipo de fuente: </b>
     Artículo de la revista “Mujer de América”
     </p>
+    </div>}
   </VerticalTimelineElement>
 
 
@@ -275,7 +345,8 @@ Novela colombiana
       Esta fuente hace un recorrido sobre los derechos de las mujeres en Colombia y como estos han evolucionado a través de los años desde la época de la independencia de la corona española. Además, pretende informar a mujeres sobre el tema de sus derechos que estaba siendo discutido por el gobierno de esa época.
     </p>
 
-    <p>ver maaaassss</p>
+    <button onClick = {this.toggleHidden7.bind(this)}> ver maaaassss</button>
+    {!this.state.isHidden7 && <div >
     <p><b>Estereotipo: </b> 
     Las mujeres tienen derecho más como las creen seres débiles e inferiores no deberían poder ejercerlos por ejemplo el votar.
     </p>
@@ -286,6 +357,7 @@ Novela colombiana
     <b>Tipo de fuente: </b>
     Columna editorial de la revista femenina Mireya
     </p>
+    </div> }
 
   </VerticalTimelineElement>
   
