@@ -18,9 +18,9 @@ export default class Post extends Component {
       isHidden6: true,
       isHidden7: true,
       isHidden8: true,
-      checkEducacion: false,
-      checkVoto: false, 
-      checkSexual: false
+      checkEducacion: true,
+      checkVoto: true, 
+      checkSexual: true
     };
   }
 
@@ -125,17 +125,17 @@ export default class Post extends Component {
         <div className="row">
         <div className="col-sm-4">
           <div className="checkbox">
-            <label><input type="checkbox" value="Educación" onClick ={this.onClickEducacion.bind(this)} />Educación</label>
+            <label><input type="checkbox" value="Educación" onClick ={this.onClickEducacion.bind(this)} checked />Educación</label>
           </div>
           </div>
           <div className="col-sm-4">
           <div className="checkbox">
-            <label><input type="checkbox" value="Voto" onClick ={this.onClickVoto.bind(this)}/>Voto</label>
+            <label><input type="checkbox" value="Voto" onClick ={this.onClickVoto.bind(this)} checked/>Voto</label>
           </div>
           </div>
           <div className="col-sm-4">
           <div className="checkbox">
-            <label><input type="checkbox" value="Sexualidad" onClick ={this.onClickSexual.bind(this)}/>Sexualidad</label>
+            <label><input type="checkbox" value="Sexualidad" onClick ={this.onClickSexual.bind(this)} checked/>Sexualidad</label>
           </div>
           </div>
         
