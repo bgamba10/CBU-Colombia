@@ -129,17 +129,17 @@ export default class Post extends Component {
         <div className="row">
         <div className="col-sm-4">
           <div className="checkbox">
-            <label><input type="checkbox" value="Educación" onClick ={this.onClickEducacion.bind(this)} checked />Educación</label>
+            <label><input type="checkbox" value="Educación" onClick ={this.onClickEducacion.bind(this)}  />Educación</label>
           </div>
           </div>
           <div className="col-sm-4">
           <div className="checkbox">
-            <label><input type="checkbox" value="Voto" onClick ={this.onClickVoto.bind(this)} checked/>Voto</label>
+            <label><input type="checkbox" value="Voto" onClick ={this.onClickVoto.bind(this)} />Voto</label>
           </div>
           </div>
           <div className="col-sm-4">
           <div className="checkbox">
-            <label><input type="checkbox" value="Sexualidad" onClick ={this.onClickSexual.bind(this)} checked/>Sexualidad</label>
+            <label><input type="checkbox" value="Sexualidad" onClick ={this.onClickSexual.bind(this)} />Sexualidad</label>
           </div>
           </div>
         
@@ -323,70 +323,93 @@ export default class Post extends Component {
 
   </VerticalTimelineElement>}
   
-  {(this.state.checkSexual || this.state.inicial) && <VerticalTimelineElement
+  {(this.state.checkVoto || this.state.inicial) && <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="1995 "
-    iconStyle={{ background: 'rgb(255, 161, 77)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(15, 181, 196) ', color: '#fff' }}
     
   >
     <h3 className="vertical-timeline-element-title">Las mujeres de la historia de Colombia</h3>
-    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
+    <h4 className="vertical-timeline-element-subtitle">Voto</h4>
     <p>
-      Creative Direction, Visual Design
-    </p>
-  </VerticalTimelineElement>}
- 
- {(this.state.checkSexual || this.state.inicial) && <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="1969 "
-    iconStyle={{ background: 'rgb(255, 161, 77) ', color: '#fff' }}
-    
-  >
-    <h3 className="vertical-timeline-element-title">Píldora o Castidad</h3>
-    <h4 className="vertical-timeline-element-subtitle">Sexualidad </h4>
-    <p>
-      La escritora de esta fuente periodística es una mujer que no está de acuerdo con algunas de las afirmaciones que hace la iglesia sobre el comportamiento que deberían tener las mujeres en la sociedad. Es colombiana e intenta dirigirse a otras mujeres para que se den cuenta de las limitaciones impuestas por la sociedad para ser felices.
+      Este texto muestra como las normas jurídicas impuestas en el país están enfocadas en imponer ideas o condiciones que generalmente están guiadas a beneficiar a las personas poderosas de Bogotá. Al mismo tiempo estas esperan penalizar y/o desmotivar la utilización del mecanismo de participación o expresión. Sumado a esto, el autor pretende mostrar y analizar como las diferentes mentalidades y evoluciones en la historia del país se pueden entender y ver con claridad si se miran y estudian las normas jurídicas que regulan las relaciones públicas y privadas de las personas.
     </p>
 
-    <button className="btn-sexualidad" onClick = {this.toggleHidden6.bind(this)}>Ver más</button>
-    {!this.state.isHidden6 && <div >
+    <button className="btn-voto" onClick = {this.toggleHidden8.bind(this)}> Ver más</button>
+    {!this.state.isHidden8 && <div >
     <p><b>Estereotipo: </b> 
-    La ideología que implanta la iglesia sobre la mujer, como esta debe ser casta pura y perfecta y por esto no apoya los anticonceptivos. 
+    Mujer vulnerable y débil lo cual le quitaba la posibilidad de opinión o pensamiento propio y la volvía fácilmente influenciable por una figura masculina.
     </p>
     <p><b>Relación con la tesis: </b> 
-     Esta fuente esta enfocada a dar una crítica pues es incoherente la visión religiosa que se implanto en la sociedad con respecto a la mujer, que va en contra a los derechos y beneficios que tiene en la época.  Las mujeres ya deberían tener la capacidad de tomar decisiones con respecto a su sexualidad y no ser vistas solo como objetos sexuales para el placer de los hombres.
+     Se relaciona establece que existe una gran diferencia entre la teoría de los derechos que existen y la realidad que se vive en el país, esto gracias a que los que tenían verdaderos derechos eran los hombres alfabetos y propietarios  además, a las mujeres se les vulneraban significantes derechos, al casarse perdían su nacionalidad y acogían la de su marido, no tenían ciudadanía pues se decía que  no estaban destinada a gobernar , a pesar de que  en 1853 la mujer consiguió el derecho al voto más se dudaba que esto fuera algo beneficioso ya que se tenía la mentalidad de que el voto no iba a ser a conciencia sino influenciado por alguna figura masculina cercana a la mujer, ya fuera un papa, hermano o esposo. 
     </p>
     <p>
     <b>Tipo de fuente: </b>
-    Artículo de la revista “Mujer de América”
+    Libro
+    </p>
+    </div> }
+
+
+  </VerticalTimelineElement>}
+ 
+ {(this.state.checkEducacion || this.state.inicial) && <VerticalTimelineElement
+    className="vertical-timeline-element--education"
+    date="2001 "
+    iconStyle={{ background: 'rgb(116, 55, 188)  ', color: '#fff' }}
+    
+  >
+    <h3 className="vertical-timeline-element-title">El Jardín</h3>
+    <h4 className="vertical-timeline-element-subtitle">Educación  </h4>
+    <p>
+
+      Esta historia relata la vida de una mujer que en su juventud trató de estudiar a peasr de las críticaspero que no tuvo éxito. Luego, se escapa y termina afectada por varios conflictos armados del país. Al final cuenta cuál es su rol y participación en los momentos y entornos de violencia y cultivos ilícitos.
+    </p>
+
+    <button className="btn-educacion" onClick = {this.toggleHidden6.bind(this)}>Ver más</button>
+    {!this.state.isHidden6 && <div >
+    <p><b>Estereotipo: </b> 
+    La mujer no debe estudiar y debe ser ama de casa mientras su marido se encarga de trabajar y conseguir el sustento del hogar. 
+    </p>
+    <p><b>Relación con la tesis: </b> 
+     En la crónica de Molano es posible percibir cómo beneficiario a los hombres con poder especialmente. Estos individuos son quienes controlan las tierras y el destino de las mujeres. Al comienzo los hermanos no querían que la mujer estudiara a pesar de que tenia todo el derecho de hacerlo y después cuando se caso le toco resignarse a ser simplemente la ama de casa encargada de cuidar a los niños.
+    </p>
+    <p>
+    <b>Tipo de fuente: </b>
+    Crónica escrita 
     </p>
     </div>}
   </VerticalTimelineElement>}
 
 
-  {(this.state.checkVoto || this.state.inicial) && <VerticalTimelineElement
+  {(this.state.checkEducacion || this.state.inicial) && <VerticalTimelineElement
     className="vertical-timeline-element--education"
-    date="1944 "
-    iconStyle={{ background: 'rgb(15, 181, 196) ', color: '#fff' }}
+    date="2011 "
+    iconStyle={{ background: 'rgb(116, 55, 188) ', color: '#fff' }}
     
   >
     <h3 className="vertical-timeline-element-title">Derechos ciudadanos de la mujer en Colombia</h3>
-    <h4 className="vertical-timeline-element-subtitle">Voto</h4>
+    <h4 className="vertical-timeline-element-subtitle">Educación </h4>
     <p>
-      Esta fuente hace un recorrido sobre los derechos de las mujeres en Colombia y como estos han evolucionado a través de los años desde la época de la independencia de la corona española. Además, pretende informar a mujeres sobre el tema de sus derechos que estaba siendo discutido por el gobierno de esa época.
+      Este texto pretendía mostrar como la literatura tiene una alta influencia en los estereotipos que se tienen y también en los derechos de las mujeres y como otras mujeres que lean estos textos se verán influenciadas en cómo   ven las cosas, su rol, sus capacidades y lo que significa ser mujer. Esto lo realiza mediante la comparación de tres libros: 
+<ul>
+<li>La María </li>
+<li>Manuela </li>
+<li>Una Holandesa en América </li>
+</ul>
+
     </p>
 
-    <button className="btn-voto" onClick = {this.toggleHidden7.bind(this)}> Ver más</button>
+    <button className="btn-educacion" onClick = {this.toggleHidden7.bind(this)}> Ver más</button>
     {!this.state.isHidden7 && <div >
     <p><b>Estereotipo: </b> 
-    Las mujeres tienen derecho más como las creen seres débiles e inferiores no deberían poder ejercerlos por ejemplo el votar.
+    Muestra los estereotipos de la mujer en el romanticismo y los de las mujeres en los libros que intentaban romper con el romanticismo y todos sus planteamientos.
     </p>
     <p><b>Relación con la tesis: </b> 
-     Las mujeres de la época ya tenían derechos, pero estas no los conocían ni podían ejercerlos pues aun la sociedad las veía como seres débiles e inferiores, entonces a pesar de que estaba escrito en la constitución la visión social que existía impedía que fueran aplicados. 
+     Esta lectura muestra como la literatura fomenta y refuerza los estereotipos de la sociedad lo cual hace que sea más fácil vulnerar los derechos de las mujeres pues ahora hasta ellas van a creer que su rol es ser sumisas y no hacerse escuchar y respetar. Además, las concentra en leer historia románticas e idealistas y no a preocuparse por los problemas reales de la sociedad en la que viven. 
     </p>
     <p>
     <b>Tipo de fuente: </b>
-    Columna editorial de la revista femenina Mireya
+    Artículo de investigación Universitaria 
     </p>
     </div> }
 
