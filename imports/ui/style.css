@@ -5,6 +5,11 @@ body {
 	background-size:cover;
 }
 
+.Post img {
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
 .i-am-centered { margin: auto; max-width: 400px;}
 
 .i-am-centered-2 { margin: auto; max-width: 850px;}
