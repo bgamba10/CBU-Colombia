@@ -489,9 +489,11 @@ export default class Post extends Component {
     <p><b>Relación con la tesis: </b> 
      Esta lectura muestra como la literatura fomenta y refuerza los estereotipos de la sociedad, 
      lo cual hace que sea más fácil vulnerar los derechos de las mujeres pues ahora incluso ellas 
-     van a creer que su rol es ser sumisas, no hacerse escuchar y no hacerse respetar. Además, las concentra 
-     en leer historia románticas e idealistas y no a preocuparse por los problemas reales de la 
-     sociedad en la que viven. 
+     van a creer que su rol es ser sumisas, no hacerse escuchar y no hacerse respetar. Además, 
+     este tipo de literatura genera que las mujeres se identifiquen y guíen por las historias 
+     románticas e idealistas. En las cuales su única función es la de cuidar a sus maridos. 
+     Entonces de manera sutil se está evitando que estas se preocupen por los problemas 
+     reales que se presentan en su realidad.
     </p>
     <p>
     <b>Tipo de fuente: </b>

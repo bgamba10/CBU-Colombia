@@ -76,7 +76,12 @@ export class App extends Component {
               <div className="carousel-caption">
                 <h3>¿Cómo nació el proyecto?</h3>
 
-                <p>El proyecto se crea gracias al curso Colombia espacio tiempo y diferencia de la Universidad de los Andes. En este curso se abordan diferentes fuentes que tratan temas de etnicidad, genero, clases sociales y más. Como grupo elegimos el eje de indagación relacionado con las mujeres a través de la historia. Se escogió este medio de difusión pues ayuda a que todo el mundo lo puede utilizar y acceder desde cualquier parte del mundo pues solo se necesita internet y algún explorador web. Sumado este tipo de plataforma nos ayudara a mostrar esta problemática de manera dinámica y moderna.</p>
+                <p>El proyecto se crea gracias al curso Colombia espacio tiempo y diferencia de la Universidad 
+                de los Andes. En este curso se abordan diferentes fuentes que tratan temas de etnicidad, género, 
+                clases sociales y más. Como grupo elegimos el eje de indagación relacionado con las mujeres a través 
+                de la historia. Se escogió este medio de difusión debido a que está disponible para cualquier persona y
+                se puede acceder desde cualquier parte del mundo pues solo se necesita internet y algún explorador web. 
+                Además, este tipo de plataforma nos ayudará a mostrar esta problemática de manera dinámica y moderna. Bajo este orden de ideas, consideramos fundamental que la herramienta sea interactiv y fácil de usar.</p>
         
               </div>
             </div>
@@ -86,7 +91,10 @@ export class App extends Component {
               <div className="carousel-caption">
                  <h3>¿A quién va dirigido?</h3>
 
-        <p>La intención de este proyecto es que cualquier persona pueda utilizarlo y ver como se ha comportado el trato con las mujeres a través de los tiempos. Sin embargo, tenemos un público objetivo principal el cual es estudiantes y profesores de nivel universitario y superiores para concientizarlo acerca de la situación por la que ha pasado y se enfrente el país en torno a la igualdad de género.</p>
+        <p>La intención de este proyecto es que cualquier persona pueda utilizarlo y ver como se ha comportado el trato con las mujeres 
+        a través de los tiempos. Sin embargo, tenemos un público objetivo principal conformado por estudiantes y profesores de nivel 
+        universitario ya que queremos concientizarlos acerca de la situación por la que ha pasado y se enfrente el país alrededor de
+          la igualdad de género.</p>
 
               </div>
             </div>
@@ -96,7 +104,9 @@ export class App extends Component {
               <div className="carousel-caption">
                 <h3>Tesis</h3>
 
-        <p>A través de los años se ha podido evidenciar que la evolución en los derechos de sexualidad, educación y voto de las mujeres van a un ritmo más rápido que la evolución de sus estereotipos, lo cual ha generado un aplazamiento en la realización efectiva de los derechos de las mujeres. </p>
+        <p>A través de los años se ha podido evidenciar que la evolución en los derechos de sexualidad, 
+        educación y voto de las mujeres van a un ritmo más rápido que la evolución de sus estereotipos, 
+        lo cual ha generado un aplazamiento en la realización efectiva de los derechos de las mujeres. </p>
 
               </div>
             </div>
@@ -106,7 +116,14 @@ export class App extends Component {
               <div className="carousel-caption">
                 <h3>¿Cuál es la importancia de este proyecto?</h3>
 
-        <p>Queremos convencer al público de que este es un problema importante dado que consideramos que se debe consciente de los cambios en la concepción de la mujer para poder entender el impacto que ha tenido en el país, en la sociedad y en la actualidad. Esto es un problema que ha afectado y aun afecta a las mujeres en cualquier parte del mundo, gracias a estos estereotipos en la actualidad se ven diferentes movimientos y organizaciones que intentan velar por la igualdad y respeto de los derechos a las mujeres. Además, el país debe realizar un cambio de mentalidad con respecto a los estereotipos de la mujer. Al convencer al público de estas transiciones que se han tenido se pueden lograr cambios, se puede aportar a que la mujer pueda tener cada día un papel más importante y que se deje de llevar tan marcada esa imagen de la mujer en siglos pasados.</p>
+        <p>Queremos convencer al público de que este es un problema importante dado que consideramos que hay que ser conscientes 
+        de los cambios en la concepción de la mujer para poder entender el impacto que ha tenido en el país, 
+        en la sociedad y en la actualidad. Esto es un problema que ha afectado y aún afecta a las mujeres en cualquier 
+        parte del mundo, es gracias a estos estereotipos que en la actualidad se ven diferentes movimientos y organizaciones que 
+        intentan velar por la igualdad y respeto de los derechos a las mujeres. Además, el país debe realizar un cambio de 
+        mentalidad con respecto a los estereotipos de la mujer. Al convencer al público de estas transiciones que se han tenido 
+        se pueden lograr cambios en la mentalidad, se puede aportar a que la mujer pueda tener cada día un papel más importante y que se deje de 
+        llevar tan marcada esa imagen de la mujer en siglos pasados.</p>
 
               </div>
             </div>
@@ -116,7 +133,8 @@ export class App extends Component {
               <div className="carousel-caption">
                 <h3>Nuestro equipo</h3>
 
-        <p>El equipo está conformado por Bibiana Gamba, Daniela Jaimes y Nicolás Acevedo. Somos un grupo de ingenieros de sistemas e industriales de la Universidad de los Andes.</p>
+        <p>El equipo está conformado por Bibiana Gamba, Daniela Jaimes y Nicolás Acevedo. Somos un grupo de ingenieros de sistemas
+         e industriales de la Universidad de los Andes.</p>
 
               </div>
             </div>
